@@ -39,7 +39,8 @@ class Dog
     dogs 
   end 
   
-  def self.create 
+  def self.create(name, breed)
+    
   end 
   
   def self.find_by_id 
