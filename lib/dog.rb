@@ -36,7 +36,8 @@ class Dog
   def self.find_or_create_by 
   end 
   
-  def self.new_from_db 
+  def self.new_from_db(row)
+    id = row[0]
     
   end 
   
