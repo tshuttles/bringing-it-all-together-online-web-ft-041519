@@ -40,7 +40,8 @@ class Dog
   end 
   
   def self.create(name, breed)
-    dogs = Dog.new()
+    dogs = Dog.new(name, breed)
+    dogs.save 
   end 
   
   def self.find_by_id 
