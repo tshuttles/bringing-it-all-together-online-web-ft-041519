@@ -62,7 +62,7 @@ class Dog
     dogs = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed)
     if !song.empty?
       dogs_data = song[0]
-      dogs = Song.new(dogs_data[0], dogs_data[1], dogs_data[2])
+      dogs = Dog.new(dogs_data[0], dogs_data[1], dogs_data[2])
     else
       dogs = self.create(name: name, breed: breed)
     end
